@@ -19,6 +19,7 @@ This is an independent companion viewer. OpenMausBot remains the place to create
 ## Features
 
 - Native-inspired dark canvas with teams, coordinators, model labels, and live activity.
+- Optional OLED mode with pure black surfaces, no canvas dot grid, and a saved display preference.
 - Instant local search by bot name, role/title, team, or model; accents are optional.
 - Soul, Skills, and Configuration inspector, including full skill instructions and conversation setting overrides.
 - Pan, zoom, fit-to-view, and draggable team containers.
@@ -70,12 +71,19 @@ python3 server.py --demo --port 8809 --open
 
 ### Always-on display
 
-Open the dashboard on the display connected to the Mac running OpenMausBot. Use your browser's full-screen mode and click the zoom percentage to fit all teams. Search stays available without a sidebar. The page resumes refreshing when it is visible again; keep the browser tab active on the display and use your normal macOS display settings if you want the screen to stay on.
+Open the dashboard on the display connected to the Mac running OpenMausBot. Use your browser's full-screen mode and click the zoom percentage to fit all teams. Search stays available without a sidebar.
+
+### OLED mode
+
+For an OLED display, enable **OLED** in the header: the canvas, teams, bot cards, search field, and inspector use pure black (`#000000`) backgrounds, with borders and text preserving their structure. The dot grid is removed. Toggle OLED off to return to the original dark theme; the choice is remembered in this browser and restored before the page paints.
+
+![Pure black OLED mode with fictional demo bots](docs/team-map-oled-demo.jpg) The page resumes refreshing when it is visible again; keep the browser tab active on the display and use your normal macOS display settings if you want the screen to stay on.
 
 ## Controls
 
 | Action | Control |
 | --- | --- |
+| OLED mode | Click **OLED** in the header; highlighted means enabled |
 | Search | Type in the search field; **Command+K** on Mac or **Control+K** elsewhere focuses it |
 | Clear search | **Escape** while the field is focused |
 | Inspect a search result | **Enter** while the field is focused |
@@ -91,7 +99,7 @@ Open the dashboard on the display connected to the Mac running OpenMausBot. Use 
 
 This repository ships **only fictional demo data and a demo screenshot**. It contains no personal team snapshot, real bot IDs, private souls, conversations, API credentials, machine paths, or hosting configuration.
 
-In live mode, the Python adapter reads OpenMausBot's loopback API at `http://127.0.0.1:8799`. It serves an explicit set of bot metadata/configuration fields and loads Soul and Skills on demand. Conversation metadata includes identifiers, titles, and execution settings; message bodies are not returned. Live data remains in server/browser memory and is not written into this repository. The only persistent dashboard state is the canvas layout in the browser's local storage, keyed by team name.
+In live mode, the Python adapter reads OpenMausBot's loopback API at `http://127.0.0.1:8799`. It serves an explicit set of bot metadata/configuration fields and loads Soul and Skills on demand. Conversation metadata includes identifiers, titles, and execution settings; message bodies are not returned. Live data remains in server/browser memory and is not written into this repository. The persistent dashboard state is the canvas layout, keyed by team name, and the display-mode preference in this browser's local storage.
 
 The adapter binds to `127.0.0.1`, checks Host/Origin and cross-site headers, does not enable CORS, disables caching for API responses, and only performs GET requests to OpenMausBot. It does not serve parent directories or directory listings. It requires no API key of its own.
 
@@ -114,7 +122,8 @@ server.py                 Read-only loopback adapter and demo server
 Open Team Map.command     macOS launcher
  dist/                    Static frontend and fictional fixtures
   app.js                  Canvas, local search, inspector
-  style.css               Native-inspired dark theme
+  style.css               Dark and pure black OLED themes
+  theme.js                Saved display mode, applied before first paint
   demo.json               Fictional company and inspector examples
   avatars/                Adapted OpenMausBot mascot SVGs
  docs/                    Demo screenshot
