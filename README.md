@@ -2,6 +2,10 @@
 
 A small, local web dashboard for visualizing your [OpenMausBot](https://github.com/milind-soni/OpenMausBot) bots as a company organigram. It follows the native app's dark canvas, team containers, mascot cards, and coordinator/member layout.
 
+## Disclaimer
+
+This tool is a **personal project** built to support a specific use case: displaying a solo company's bot organigram on an always-on screen. It was **not created by, and is not endorsed by, the OpenMausBot product, team, or representatives**.
+
 ![Fictional company team map](docs/team-map-demo.jpg)
 
 ## Why a separate team map?
