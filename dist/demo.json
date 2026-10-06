@@ -1,0 +1,654 @@
+{
+  "demo": true,
+  "live": false,
+  "capturedAt": "Fictional example",
+  "sections": [
+    "Company",
+    "Marketing",
+    "Operations"
+  ],
+  "bots": [
+    {
+      "id": "demo-bot-01",
+      "name": "Chief of Staff",
+      "title": "Coordinates the company and keeps priorities clear",
+      "section": "Company",
+      "chiefOfStaff": true,
+      "color": "blue",
+      "mascotBody": "drop",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-02",
+      "name": "Product Planner",
+      "title": "Turns ideas into focused product plans",
+      "section": "Company",
+      "chiefOfStaff": false,
+      "color": "blue",
+      "mascotBody": "squircle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-03",
+      "name": "Research Analyst",
+      "title": "Finds evidence and answers open questions",
+      "section": "Company",
+      "chiefOfStaff": false,
+      "color": "blue",
+      "mascotBody": "circle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-04",
+      "name": "Story Architect",
+      "title": "Writes clear stories and acceptance criteria",
+      "section": "Company",
+      "chiefOfStaff": false,
+      "color": "blue",
+      "mascotBody": "squircle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-05",
+      "name": "Marketing Lead",
+      "title": "Sets direction for the marketing team",
+      "section": "Marketing",
+      "chiefOfStaff": true,
+      "color": "orange",
+      "mascotBody": "circle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-06",
+      "name": "Design Studio",
+      "title": "Creates visual concepts and creative briefs",
+      "section": "Marketing",
+      "chiefOfStaff": false,
+      "color": "orange",
+      "mascotBody": "circle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-07",
+      "name": "Content Writer",
+      "title": "Drafts useful, consistent company content",
+      "section": "Marketing",
+      "chiefOfStaff": false,
+      "color": "orange",
+      "mascotBody": "circle",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-08",
+      "name": "Operations Lead",
+      "title": "Coordinates reliable systems and workflows",
+      "section": "Operations",
+      "chiefOfStaff": true,
+      "color": "blue",
+      "mascotBody": "cursor",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-09",
+      "name": "Automation Builder",
+      "title": "Designs repeatable tools and workflows",
+      "section": "Operations",
+      "chiefOfStaff": false,
+      "color": "blue",
+      "mascotBody": "cursor",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    },
+    {
+      "id": "demo-bot-10",
+      "name": "Quality Reviewer",
+      "title": "Checks outcomes and flags gaps",
+      "section": "Operations",
+      "chiefOfStaff": false,
+      "color": "blue",
+      "mascotBody": "cursor",
+      "modelSelection": {
+        "model": "gpt-6.1-sol"
+      },
+      "busy": false,
+      "activity": "idle",
+      "demo": true
+    }
+  ],
+  "details": {
+    "demo-bot-01": {
+      "id": "demo-bot-01",
+      "soul": "# Chief of Staff\n\nFictional demo instructions.\n\nPurpose: coordinates the company and keeps priorities clear.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-01",
+        "name": "Chief of Staff",
+        "title": "Coordinates the company and keeps priorities clear",
+        "section": "Company",
+        "chiefOfStaff": true,
+        "color": "blue",
+        "mascotBody": "drop",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Coordinates the company and keeps priorities clear. This is a fictional example bot.",
+        "threadId": "demo-chat-01",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-01",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-02": {
+      "id": "demo-bot-02",
+      "soul": "# Product Planner\n\nFictional demo instructions.\n\nPurpose: turns ideas into focused product plans.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-02",
+        "name": "Product Planner",
+        "title": "Turns ideas into focused product plans",
+        "section": "Company",
+        "chiefOfStaff": false,
+        "color": "blue",
+        "mascotBody": "squircle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Turns ideas into focused product plans. This is a fictional example bot.",
+        "threadId": "demo-chat-02",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-02",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-03": {
+      "id": "demo-bot-03",
+      "soul": "# Research Analyst\n\nFictional demo instructions.\n\nPurpose: finds evidence and answers open questions.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-03",
+        "name": "Research Analyst",
+        "title": "Finds evidence and answers open questions",
+        "section": "Company",
+        "chiefOfStaff": false,
+        "color": "blue",
+        "mascotBody": "circle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Finds evidence and answers open questions. This is a fictional example bot.",
+        "threadId": "demo-chat-03",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-03",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-04": {
+      "id": "demo-bot-04",
+      "soul": "# Story Architect\n\nFictional demo instructions.\n\nPurpose: writes clear stories and acceptance criteria.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-04",
+        "name": "Story Architect",
+        "title": "Writes clear stories and acceptance criteria",
+        "section": "Company",
+        "chiefOfStaff": false,
+        "color": "blue",
+        "mascotBody": "squircle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Writes clear stories and acceptance criteria. This is a fictional example bot.",
+        "threadId": "demo-chat-04",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-04",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-05": {
+      "id": "demo-bot-05",
+      "soul": "# Marketing Lead\n\nFictional demo instructions.\n\nPurpose: sets direction for the marketing team.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-05",
+        "name": "Marketing Lead",
+        "title": "Sets direction for the marketing team",
+        "section": "Marketing",
+        "chiefOfStaff": true,
+        "color": "orange",
+        "mascotBody": "circle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Sets direction for the marketing team. This is a fictional example bot.",
+        "threadId": "demo-chat-05",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-05",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-06": {
+      "id": "demo-bot-06",
+      "soul": "# Design Studio\n\nFictional demo instructions.\n\nPurpose: creates visual concepts and creative briefs.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-06",
+        "name": "Design Studio",
+        "title": "Creates visual concepts and creative briefs",
+        "section": "Marketing",
+        "chiefOfStaff": false,
+        "color": "orange",
+        "mascotBody": "circle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Creates visual concepts and creative briefs. This is a fictional example bot.",
+        "threadId": "demo-chat-06",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-06",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-07": {
+      "id": "demo-bot-07",
+      "soul": "# Content Writer\n\nFictional demo instructions.\n\nPurpose: drafts useful, consistent company content.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-07",
+        "name": "Content Writer",
+        "title": "Drafts useful, consistent company content",
+        "section": "Marketing",
+        "chiefOfStaff": false,
+        "color": "orange",
+        "mascotBody": "circle",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Drafts useful, consistent company content. This is a fictional example bot.",
+        "threadId": "demo-chat-07",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-07",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-08": {
+      "id": "demo-bot-08",
+      "soul": "# Operations Lead\n\nFictional demo instructions.\n\nPurpose: coordinates reliable systems and workflows.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-08",
+        "name": "Operations Lead",
+        "title": "Coordinates reliable systems and workflows",
+        "section": "Operations",
+        "chiefOfStaff": true,
+        "color": "blue",
+        "mascotBody": "cursor",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Coordinates reliable systems and workflows. This is a fictional example bot.",
+        "threadId": "demo-chat-08",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-08",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-09": {
+      "id": "demo-bot-09",
+      "soul": "# Automation Builder\n\nFictional demo instructions.\n\nPurpose: designs repeatable tools and workflows.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-09",
+        "name": "Automation Builder",
+        "title": "Designs repeatable tools and workflows",
+        "section": "Operations",
+        "chiefOfStaff": false,
+        "color": "blue",
+        "mascotBody": "cursor",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Designs repeatable tools and workflows. This is a fictional example bot.",
+        "threadId": "demo-chat-09",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-09",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    },
+    "demo-bot-10": {
+      "id": "demo-bot-10",
+      "soul": "# Quality Reviewer\n\nFictional demo instructions.\n\nPurpose: checks outcomes and flags gaps.\n\nWork from clear requirements, explain assumptions, and ask for clarification when a key detail is missing. Coordinate with the team lead and report a concise result.",
+      "skills": [
+        {
+          "name": "example-review",
+          "description": "Review a draft against its requirements and report missing details.",
+          "origin": "private",
+          "enabled": true,
+          "text": "---\nname: example-review\ndescription: Review a draft against its requirements.\n---\n\n# Example review\n\nThis is fictional demo content.\n\n1. Read the stated requirements.\n2. Check the draft for completeness and clarity.\n3. List any gaps with a concrete suggested correction.\n4. Return a concise review."
+        }
+      ],
+      "assignedSkills": [
+        "example-review"
+      ],
+      "configuration": {
+        "id": "demo-bot-10",
+        "name": "Quality Reviewer",
+        "title": "Checks outcomes and flags gaps",
+        "section": "Operations",
+        "chiefOfStaff": false,
+        "color": "blue",
+        "mascotBody": "cursor",
+        "modelSelection": {
+          "model": "gpt-6.1-sol"
+        },
+        "busy": false,
+        "activity": "idle",
+        "demo": true,
+        "description": "Checks outcomes and flags gaps. This is a fictional example bot.",
+        "threadId": "demo-chat-10",
+        "computer": "local",
+        "approvalMode": "ask",
+        "memoryEnabled": true,
+        "notifications": true,
+        "browser": true,
+        "assignedSkills": [
+          "example-review"
+        ]
+      },
+      "conversations": [
+        {
+          "threadId": "demo-chat-10",
+          "title": "Example conversation",
+          "approvalMode": "ask",
+          "activity": "idle"
+        }
+      ]
+    }
+  }
+}

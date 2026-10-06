@@ -1,0 +1,27 @@
+# Local files and private data must never be committed.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.openai/
+.codex/
+.sites-runtime/
+.local/
+private/
+exports/
+snapshots/
+**/snapshot.json
+*.log
+*.sqlite*
+*.db
+*.key
+*.pem
+*.p12
+*.tar.gz
+*.zip
+preview.*
+feature-request.*
+repository-proof.*

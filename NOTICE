@@ -1,0 +1,13 @@
+OpenMausBot Team Map
+Copyright 2026 OpenMausBot Team Map contributors
+
+The mascot SVG assets in dist/avatars are adapted from OpenMausBot's body
+silhouettes and face data, Copyright 2026 Milind Soni and OpenMausBot
+contributors, licensed under Apache License 2.0.
+Source: https://github.com/milind-soni/OpenMausBot
+Reference commit: 78098c4722a97d80f4cf94e33e5a6fba2f1c5c93
+Modifications: combined body and face paths into standalone SVG avatars,
+with color variants for this dashboard.
+
+This is an independent companion project. It is not an official OpenMausBot
+release. Other OpenMausBot components and dependencies are not bundled here.
